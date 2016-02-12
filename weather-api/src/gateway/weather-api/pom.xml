@@ -31,7 +31,7 @@
     <name>weather-api</name>
     <packaging>pom</packaging>
 	<!--Used incase of jmeter testing-->
-    <!--<profiles>
+    <profiles>
         <profile>
             <id>test</id>
             <build>
@@ -51,12 +51,6 @@
                                 <skipTests>${skipTests}</skipTests>
                                 <ignoreResultFailures>true</ignoreResultFailures>
                                 <suppressJMeterOutput>false</suppressJMeterOutput>
-                                    <propertiesUser>
-                                        <testData>weather_test.csv</testData>
-                                        <threadNum>5</threadNum>
-                                        <rampUpPeriodSecs>5</rampUpPeriodSecs>
-                                        <loopCount>2</loopCount>
-                                    </propertiesUser>
                             </configuration>
                         </execution>
                     </executions>
@@ -87,12 +81,6 @@
                                 <skipTests>${skipTests}</skipTests>
                                 <ignoreResultFailures>true</ignoreResultFailures>
                                 <suppressJMeterOutput>false</suppressJMeterOutput>
-                                    <propertiesUser>
-                                        <testData>weather_prod.csv</testData>
-                                        <threadNum>5</threadNum>
-                                        <rampUpPeriodSecs>5</rampUpPeriodSecs>
-                                        <loopCount>2</loopCount>
-                                    </propertiesUser>
                             </configuration>
                         </execution>
                     </executions>
